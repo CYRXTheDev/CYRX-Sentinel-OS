@@ -4,24 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CYRX SentinelOS</title>
-    <link rel="stylesheet" href="/css/stylesheet.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
+
   <body>
     <header>
-      <nav>
-        <img src="assets/Cutiep.jpg" alt="CYRX SentinelOS Logo" />
-        <p>CYRX SentinelOS</p>
-        <ul>
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-        </ul>
+      <nav class="navbar">
+        <!-- Brand / Logo + Title Container -->
+        <div class="nav-brand">
+          <img src="assets/logo.png" alt="CYRX SentinelOS Logo" />
+          <h1 class="header-title">
+            <span style="color: antiquewhite">CYRX</span> ORBITAL
+            <span style="color: #6897dd">OS</span>
+          </h1>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+          <!-- Search / Magnifying Glass Icon (SVG) -->
+          <svg
+            class="search-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+
+          <!-- Input Field -->
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search anything..."
+          />
+        </div>
       </nav>
     </header>
 
-    <section>
-      
-    </section>
-    </section>
+    <!-- Sidebar -->
+    <aside>
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a id="home-link" href="#">
+              <img src="assets/home.png" alt="Home logo" />
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a id="explorer-link" href="#">
+              <img src="assets/explorer.png" alt="Explorer logo" />
+              <span>Explorer</span>
+            </a>
+          </li>
+          <li>
+            <a id="gallery-link" href="#">
+              <img src="assets/gallery.png" alt="Gallery logo" />
+              <span>Gallery</span>
+            </a>
+          </li>
+          <li>
+            <a id="notes-link" href="#">
+              <img src="assets/notes.png" alt="Notes logo" />
+              <span>Notes</span>
+            </a>
+          </li>
+          <li>
+            <a id="terminal-link" href="#">
+              <img src="assets/terminal.png" alt="Terminal logo" />
+              <span>Terminal</span>
+            </a>
+          </li>
+          <li>
+            <a id="settings-link" href="#">
+              <img src="assets/settings.png" alt="Settings logo" />
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
   </body>
 </html>
