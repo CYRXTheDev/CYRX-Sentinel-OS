@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f1d39;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR MAIN CONTAINER */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Inihihiwalay ang Brand sa Kaliwa, Search sa Kanan */
+  align-items: center;
+  background-color: rgb(0, 8, 36);
+  padding: 12px 30px;
+  position: relative; /* Kailangan para ma-center nang maayos ang search bar */
+}
+
+/* LOGO + TITLE CONTAINER */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-brand img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(65, 83, 172);
+}
+
+/* CONTAINER NG SEARCH BAR (PERFECT CENTER) */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #0d1e3d;
+  padding: 8px 16px;
+  border-radius: 20px;
+  width: 320px;
+  border: 1px solid #162c54;
+
+  /* Ginagamit ito para manatiling exact center sa buong Screen */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* SEARCH ICON */
+.search-icon {
+  width: 16px;
+  height: 16px;
+  color: #6b82a8;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+/* INPUT FIELD */
+.search-container input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+}
+
+.search-container input::placeholder {
+  color: #6b82a8;
+}
+
+/* SIDEBAR STYLES */
+.sidebar {
+  margin-top: 74px; /* Pantay sa taas ng navbar */
+  height: calc(100vh - 74px); /* Sakop ang natitirang taas ng screen */
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 8, 36);
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li a {
+  display: flex;
+  align-items: center; /* Inayos: 'center' imbes na 'row' */
+  gap: 15px;
+  text-decoration: none;
+  color: #4c70de;
+  padding: 12px 20px;
+  font-size: 16px;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.sidebar li a:hover {
+  background-color: #0d1e3d;
+  color: #ffffff;
+}
+
+.sidebar li a img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
